@@ -1,0 +1,226 @@
+/*
+Theme Name: Portal-NovisDesign
+Author: Novis, Serbia
+Author URI: http://wwww.novis.rs
+Version: 1.0
+*/
+
+body{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+a:link,
+a,visited{
+	color: #0d9d56;
+}
+p{
+	line-height: 1.65em;
+}
+
+/* General Layout */
+div.container{
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Aside Post */
+article.post.post-aside{
+	border: none;
+}
+article.post-aside{
+	font-size: 125%; 
+	background-color: #fff5cb;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+article.post-aside p{
+	margin: 0;
+}
+.mini-meta{
+	font-size: 68%;
+	margin: 0px;
+	color: #777;
+}
+
+/* Header */
+.site-header{
+	border-bottom: 1px solid #0d9d56;
+	margin-bottom: 20px;
+}
+
+/* Main Column */
+.main-column{
+	width: 66%;
+	float: left;
+}
+.secondary-column{
+	width: 30%;
+	float: right;
+}
+
+.clearfix{
+	overflow: auto;
+	zoom: 1;
+}
+
+/* Footer */
+.site-footer{
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
+
+article.post{
+	border-bottom: 2px dotted #bbbbbb;
+}
+article.post:last-of-type{
+	border-bottom: none;
+}
+/* Navigation Menus */
+.site-nav ul{
+	margin: 0;
+	padding: 0;
+}
+.site-nav ul:before, .site-nav ul:after{ content: ""; display: table; }
+.site-nav ul:after{ clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li{
+	list-style: none;
+	float: left;
+}
+/* Site Header Menu */
+.site-header nav ul li{
+	margin-right: 5px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+	display: block;
+	padding: 10px 18px;
+	border: 1px solid #0d9d56;
+	border-bottom: none;
+	text-decoration: none;
+}
+.site-header nav ul li a:hover{
+	background: #ececec;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited{
+	background-color: #0d9d56;
+	color: #fff;
+}
+/* Site Footer Menu */
+.site-footer nav ul li{
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted lightblue;
+}
+/* Page Layout */
+article.page h2{
+	font-size: 300%;
+}
+
+/* Post Styles */
+.post.has-thumbnail{
+	min-height: 200px;
+}
+.post h2{
+	margin-bottom: 0;
+}
+p.post-info{
+	font-size: 87%;
+	color: #999;
+	margin-top: 0px;
+}
+p.post-info a:link,
+p.post-info a:visited{
+	color: #999;
+}
+/* Image Style */
+img{
+	max-width: 100%;
+}
+.has-thumbnail{
+	position: relative;
+	padding-left: 200px;
+}
+.post-thumbnail{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* Search */
+div.header-search{
+	float: right;
+}
+div.header-search .search-submit{
+	background-color: #0d9d56;
+	color: #fff;
+	padding: 5px 14px;
+	border: none;
+	vertical-align: top;
+}
+div.header-search .search-field{
+	vertical-align: top;
+	padding: 3px 0;
+}
+
+/* Comments */
+.comments-list{ 
+	background-color: rgba(13,157,86, 0.5);
+	padding: 0; 
+}
+.comments-list .children{
+	padding-top: 5px;
+}
+.comments-list .comment-metadata{
+	font-size: 80%;
+}
+.comments-list .comment-metadata a{
+	color: rgba(256, 256, 256, 0.87);
+}
+.comment-meta {
+	padding: 0 0 48px;
+	overflow: hidden;
+	position: relative;
+	background-color: rgba(13,157,86, 0.7);
+	color:#FFFFFF;
+	padding: 10px;
+}
+.comments-list .comment-content{
+	color: #fff;
+	padding-left: 10px;
+}
+.post-comment-button{
+	background-color: #0d9d56;
+	border: none;
+	padding: 8px;
+	color: #fff; 
+	border-radius: 2px;
+}
+.comment-form-comment label, .comment-form-comment textarea{
+	display: block;
+}
+.comment-form-author label, .comment-form-author input{
+	display: block;
+}
+.comment-form-email label, .comment-form-email input{
+	display: block;
+}
+
+
+
+
+
+/* Mobile */
+@media(max-width: 775px){
+	.secondary-column{
+		display: none;	
+	}
+	.main-column{
+		width: 100%;
+	}
+}
